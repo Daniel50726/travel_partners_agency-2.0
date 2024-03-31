@@ -1,0 +1,135 @@
+.headerLugaresTuristicos {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.headerLugaresTuristicosSection {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logoLugaresTuristicos {
+    display: flex;
+    align-items: center;
+}
+
+.logoLugaresTuristicos img {
+    order: -1;
+}
+
+.tituloLugaresTuristicos {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+.principalContainer {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.principal {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.principal:hover {
+    text-decoration: underline;
+}
+
+.lugaresTuristicosSection {
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px 50px;
+}
+
+.tituloLugaresTuristicosSection {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.descripcionLugaresTuristicosSection {
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.subtituloLugaresTuristicosSection {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.atractivosTuristicos {
+    margin-bottom: 30px;
+}
+
+.fotoLugarTuristico {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.itinerarioLista {
+    margin-bottom: 20px;
+}
+
+.itinerarioLista li {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.footerContainer {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+}
+
+.social li {
+    margin: 0 5px;
+}
+
+.footerTittle {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footerInfo {
+    color: white;
+}

@@ -1,0 +1,134 @@
+.headerPrincipal {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.headerSection {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logoTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.logoTitulo img {
+    order: -1;
+}
+
+.tituloPrincipal {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 42px;
+    margin: 25px 0;
+}
+
+.nosotrosContainer {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.nosotros {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nosotros:hover {
+    text-decoration: underline;
+}
+
+.lugaresTuristicos {
+    padding-left: 40px;
+}
+
+.lugaresTuristicos li{
+    display: inline-block;
+    text-align: center;
+    width: 16%;
+    height: 600px;
+    vertical-align: top;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.colombia {
+    background: url("imagenes/badera_colombia.jpg");
+}
+
+.brasil {
+    background: url("imagenes/bandera_brasil.jpg");
+    background-size: cover;
+}
+
+.peru {
+    background: url("imagenes/bandera_peru.jpg");
+    background-size: cover;
+}
+
+.españa {
+    background: url("imagenes/bandera_españa.jpg");
+    background-size: cover;
+}
+
+.japon {
+    background: url("imagenes/bandera_japon.jpg");
+    background-size: cover;
+}
+
+.italia {
+    background: url("imagenes/bandera_italia.jpg");
+    background-size: cover;
+}
+
+.lugaresTuristicos li:hover {
+    border-color: #856c09;
+}
+
+.lugaresTuristicos li:hover .linkLugaresTuristicos {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.linkLugaresTuristicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.footerContainer {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+    background-color: black;
+    text-decoration: none;
+}
+
+.social li {
+    margin: 0 5px;
+}
+
+.footerTittle {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footerInfo {
+    color: white;
+}
