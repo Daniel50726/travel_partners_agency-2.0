@@ -1,7 +1,6 @@
 .headerLugaresTuristicos {
     background-color: #BBBBBB;
     padding: 20px 0;
-    margin-bottom: 20px;
 }
 
 .headerLugaresTuristicosSection {
@@ -27,10 +26,29 @@
     margin: 25px 0;
 }
 
+.sidebar {
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    background: linear-gradient(#BBBBBB, white);
+}
+
+.opcionAuxLista {
+    margin-bottom: 10px;
+}
+
 .principalContainer {
     position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
     top: 50px;
     right: 0;
+}
+
+.principalParrafo {
+    margin-right: 10px;
 }
 
 .principal {
@@ -45,13 +63,13 @@
     text-decoration: underline;
 }
 
-.lugaresTuristicosSection {
+.videoSection, .lugaresTuristicosSection, .itinerarioSection, .costoViajeSection {
     width: 40%;
     margin: 0 auto;
     padding: 15px 50px;
 }
 
-.tituloLugaresTuristicosSection {
+.titulovideoSection, .tituloLugaresTuristicosSection, .tituloLugaresItinerarioSection, .tituloCostoViajeSection {
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
@@ -60,13 +78,7 @@
     margin-bottom: 20px;
 }
 
-.descripcionLugaresTuristicosSection {
-    font-size: 20px;
-    color: black;
-    text-align: justify;
-}
-
-.video-container {
+.videoContainer {
     position: relative;
     width: 100%;
     height: 0;
@@ -74,7 +86,7 @@
     margin-top: 20px;
 }
 
-.video-container iframe {
+.videoContainer iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +94,50 @@
     height: 100%;
 }
 
+.atractivosTuristicos {
+    margin-bottom: 30px;
+}
+
+.contenedorImagen {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.fotoLugarTuristico {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.fotoLugarTuristico:hover {
+    opacity: 0.8;
+}
+
+.textoSuperpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
 .subtituloLugaresTuristicosSection {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subtituloItinerarioSection {
     text-transform: uppercase;
     text-align: left;
     font-size: 20px;
@@ -91,15 +146,28 @@
     margin-bottom: 10px;
 }
 
-.atractivosTuristicos {
-    margin-bottom: 30px;
+.descripcionLugaresTuristicosSection {
+    font-size: 20px;
+    color: white;
+    text-align: justify;
 }
 
-.fotoLugarTuristico {
+.descripcionvideoSection, .descripcionItinerarioSection, .descripcionCostoViajeSection {
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+}
+
+.contenedorImagen:hover .textoSuperpuesto {
+    opacity: 3;
+}
+
+.itinerarioSection .itinerarioLista {
+    display: none;
+}
+
+.subtituloItinerarioSection:hover + .itinerarioLista {
     display: block;
-    margin: 10px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .itinerarioLista {
@@ -111,8 +179,35 @@
     margin-top: 10px;
 }
 
+.leerMasParrafo, .leerMenosParrafo {
+    margin-top: 10px;
+}
+
+.leerMas, .leerMenos, .opcionAux {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.leerMas:hover, .leerMenos:hover, .opcionAux:hover {
+    text-decoration: underline;
+}
+
+#contenidoAdicional {
+    display: none;
+}
+
+#contenidoAdicional:target {
+    display: block;
+}
+
+#contenidoAdicional:not(:target) {
+    display: none;
+}
+
 .footerContainer {
-    margin: 20px 0;
     padding: 20px 0;
     text-align: center;
     background-color: black;
